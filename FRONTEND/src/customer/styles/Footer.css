@@ -1,0 +1,220 @@
+.footer{
+    margin-top: 1.5rem;
+    background-color: black;
+    color: white;
+}
+
+.footer-section{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  /* Allow wrapping on smaller screens */
+    padding: 2rem 0;  /* Adding some padding for a cleaner look */
+    border-bottom: 1px solid gray;
+    width: 100%;  /* Ensure it takes full width */
+}
+
+.footer-follow-links{
+    display: flex;
+    gap: 0.7rem;
+}
+
+.footer-follow-links a{
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem;
+    border:1px solid gray;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s ease-in-out;
+}
+
+.footer-follow-links a:hover{
+    transform: translateY(-0.5rem);
+}
+
+.footer-quick-links{
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.footer-quick-links a{
+    text-decoration: none;
+    color: gray;
+    transition: all 0.1s ease-in-out;
+}
+
+.footer-quick-links a:hover{
+    color: white;
+}
+
+.footer-contacts{
+    display: flex;
+    font-size: medium;
+    flex-direction: column;
+}
+
+.footer-newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.footer-newsletter input{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.1rem;
+}
+
+.footer-newsletter input:focus{
+    color: white;
+    outline: none;
+}
+
+.newsletter-mail-box{
+    border-bottom: 1px solid gray;
+}
+
+.newsletter-mail-box{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.newsletter-mail-box a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-contact-section p{
+    color: gray;
+    align-items: center;
+    display: flex;
+    gap: 0.2rem;
+    font-size: small;
+}
+
+.footer-copyright{
+    display: flex;
+    justify-content: center;
+    color: gray;
+    font-size: small;
+}
+
+/* Media Query for Tablet and Mobile */
+@media (max-width: 1024px) {
+    .footer-section {
+        gap: 2rem;
+        justify-content: center;
+    }
+    
+    .footer-follow-links {
+        margin-bottom: 1rem;
+    }
+
+    .footer-quick-links, 
+    .footer-contacts, 
+    .footer-newsletter {
+        width: 100%;
+        margin-bottom: 1rem;
+        align-items: center;
+    }
+
+    .footer-quick-links a {
+        font-size: 0.9rem;
+    }
+
+    .newsletter-mail-box {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .footer-newsletter input {
+        width: 80%; /* Adjusting width on mobile */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex-direction: column;  /* Stack elements vertically */
+        gap: 1.5rem;
+        height: auto;  /* Ensure footer grows with content */
+        justify-content: center;  /* Align center */
+        padding: 2rem 0;  /* Add some padding for better spacing */
+    }
+
+    .footer-follow-links {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-quick-links {
+        gap: 0.7rem;
+        align-items: center;
+    }
+
+    .footer-contacts {
+        align-items: center;
+    }
+
+    .footer-newsletter {
+        width: 90%;
+        gap: 0.4rem;
+    }
+
+    .newsletter-mail-box {
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+    
+    .footer-copyright {
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile Portrait */
+@media (max-width: 480px) {
+    .footer-section {
+        flex-direction: column; /* Stack footer content */
+        gap: 1rem;
+    }
+
+    .footer-follow-links {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .footer-quick-links {
+        align-items: center;
+    }
+
+    .footer-contacts {
+        align-items: center;
+    }
+
+    .footer-newsletter {
+        width: 90%;
+    }
+
+    .footer-newsletter input {
+        width: 100%; /* Full width for smaller screens */
+        padding: 0.8rem; /* Reduce padding */
+    }
+
+    .footer-copyright {
+        font-size: 0.7rem; /* Smaller font for mobile */
+    }
+
+    .footer-quick-links a {
+        font-size: 0.7rem; /* Smaller links for mobile */
+    }
+}

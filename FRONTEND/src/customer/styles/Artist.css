@@ -1,0 +1,8 @@
+.artwork-artist-card:hover{
+    transform: scale(1.025)
+}
+
+.artwork-artist-card{
+    transition: all 0.15s ease-in-out;
+}
+

@@ -1,0 +1,37 @@
+.profile-form{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 2rem;
+    border-radius: 0.2rem;
+    padding: 1.5rem;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.152);
+}
+
+.form-control {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-control input{
+    width: "100%";
+}
+
+.form-btn{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: end;
+}
+
+.error{
+    color: red;
+    font-weight: 800;
+}
+
+.message{
+    color: green;
+    font-weight: 800;
+}

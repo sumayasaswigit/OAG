@@ -1,0 +1,237 @@
+.artwork-container {
+  padding: 24px;
+}
+
+.artwork-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.error-message {
+  color: #e53e3e; /* Tailwind's red-600 */
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.artwork-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+}
+
+@media (min-width: 640px) {
+  .artwork-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .artwork-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .artwork-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.artwork-card {
+  max-width: 300px;
+  background-color: #fff;
+  border: 1px solid #e2e8f0; /* Tailwind's gray-200 */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.artwork-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.artwork-card-body {
+  padding: 16px;
+}
+
+.artwork-card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.artwork-description {
+  color: #4a5568; /* Tailwind's gray-600 */
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+}
+
+.artwork-price {
+  color: #48bb78; /* Tailwind's green-600 */
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.artwork-dimensions {
+  color: #2d3748; /* Tailwind's gray-800 */
+  font-size: 0.875rem;
+  margin-bottom: 8px;
+}
+
+.artwork-status {
+  color: #ecc94b; /* Tailwind's yellow-400 */
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+
+
+/* General container */
+.artwork-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.artwork-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+/* Artwork cards grid */
+.artwork-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 260px;
+  transition: transform 0.2s ease;
+}
+
+.artwork-card:hover {
+  transform: translateY(-4px);
+}
+
+.artwork-card h3 {
+  margin: 0.5rem 0 0.3rem;
+  font-size: 1.1rem;
+}
+
+.artwork-card p {
+  color: #444;
+  margin: 0.2rem 0 1rem;
+}
+
+/* Host Button */
+.host-btn {
+  background-color: #ff6f61;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.host-btn:hover {
+  background-color: #e85c50;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Box */
+.modal-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.modal-box h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Form inside Modal */
+.modal-box form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-box label {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.modal-box input {
+  margin-top: 0.3rem;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Submit button */
+.submit-btn {
+  margin-top: 1.5rem;
+  background-color: #c73a35;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #c80700;
+}
+
+/* Error message */
+.error-message {
+  color: #d9534f;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .artwork-container {
+    padding: 1rem;
+  }
+
+  .artwork-card {
+    width: 100%;
+  }
+
+  .modal-box {
+    padding: 1.2rem;
+  }
+}

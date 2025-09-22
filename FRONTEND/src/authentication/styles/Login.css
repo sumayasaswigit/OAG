@@ -1,0 +1,131 @@
+.login{
+    background-color: rgb(251, 251, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.header-quote{
+    color: gray;
+    font-size: small;
+    padding: 0;
+}
+
+.header h2{
+    margin-bottom: 0.5rem;
+}
+
+.login-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    background-color: white;
+    margin-top: 2rem;
+    width: 30%;
+    border-radius: 0.5rem;
+}
+
+.login-header{
+    margin:0;
+    text-align: center;
+    background-color: rgb(251, 251, 248);
+    font-size: 1.5rem;
+
+}
+
+.form-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+}
+
+.login-input-field{
+    width: 20vw;
+    border: 1px solid lightgray;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.form-section p{
+    margin-bottom: 0.3rem;
+}
+
+.check-section{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    font-size: small;
+}
+
+.login-page-btn button{
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    width: 20vw;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    font-family: Montserrat, sans-serif;
+}
+
+.login-page-btn:hover{
+    opacity: 0.8;
+}
+
+.login-divider span{
+    color: lightgray;
+    font-size: small;
+    padding: 0 3rem;
+}
+
+.login-divider{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 0.2rem;
+}
+
+.login-divider::after, .login-divider::before{
+    display: block;
+    background-color: lightgray;
+    content: "";
+    height: 2px;
+}
+
+.login-opts button{
+    border: 1px solid lightgray;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+.login-opts{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.login-register{
+    font-size: small;
+    color: gray;
+    margin-top: 1rem;
+}
+
+.login-register span{
+    color: black;
+    font-weight: 500;
+}
