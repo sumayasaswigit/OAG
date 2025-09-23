@@ -28,6 +28,7 @@ import com.fsd.sdp.asthetica.service.UserService;
 @RequestMapping("/admin")
 @CrossOrigin("*")
 public class AdminController {
+    // modification
 	@Autowired
 	private UserService service;
 	
